@@ -1,0 +1,27 @@
+Question 0: What is the URL of your python flask_restfull code on github???
+
+https://github.com/debecerra/cmput404-lab7-flask
+
+Question 1: How are Flask and Django different? What does Django provide for you that Flask does not?
+
+Flask only provides basic functionality for managing and processing HTTP requests. On the other hand, Django provides a lot more features, such as data management and abstraction via ORM, authentication, several built in middlewares, a built-in admin website, a built-in testing framework, and more.
+
+Question 2: What does REST stand for? When I say something is RESTful, what does that mean?
+
+REST stands for representational state transfer. To say something is RESTful, it means that something must follow a series of REST design principles. These principles include uniform interface, client-server decoupling, statelessness, cacheability, layered system architecture and code on demand (IBM Cloud Education, https://www.ibm.com/cloud/learn/rest-apis, 2021-04-06)
+
+Question 3: What does CRUD stand for? For each letter in CRUD, give the associated HTTP method.
+
+CRUD stands for Create, Read, Update, Delete. They are the basic operations we want to perform on any data. PUT (maybe POST) would be associated to Create, GET would be associated to Read, PATCH (maybe POST) would be associated to Update and DELETE would be associated to Delete.
+
+Question 4: What do HTTP 1XX Status Codes mean? HTTP 2xx? HTTP 3xx? HTTP 4xx? HTTP 5xx?
+
+1XX codes are informational. It is when the server wants to give us a info that is purely to inform and doesn't relate to other status code groups. 2XX codes mean "Success" of some form. 3XX codes are used for redirection and they tell the client that although this URL cannot handle their request, there is another who might so they should go there. 4XX codes means an error occurred and it was the fault of the client/request. 5XX codes means that an error eccurred and it was the fault of the server.
+
+Question 5: What is an XSS attack? Provide one way a site can be vulneratble to an XSS attack.
+
+XSS stands for cross-site scripting. A XSS attack is when a attacker is able to inject malicious client-side code into a website (MDN WebDocs, https://developer.mozilla.org/en-US/docs/Glossary/Cross-site_scripting). A web application can be vulnerable to XSS if it uses unsanitized user input in the output that it generates.
+
+Question 6: What does CORS stand for? What situation in web application development will you need to implement CORS protection?
+
+CORS stands for Cross-Origin Resource Sharing. CORS is an HTTP-header based mechanism that allows a server to indicate which origins other than its own from which a browser should permit loading resources. (MDN WebDocs, https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS). Once pushing a project to deployment, one needs to consider CORS protection since there may be resources being accessed from different origins/locations and is no longer all being loaded from a local machine. Additionally, one needs to protect itself from malicious resources that could be loaded, now that the web application is open to the world wide web.
